@@ -1,0 +1,7 @@
+{
+  "uuid": "gpu-meter@losus.ai",
+  "name": "GPU Meter",
+  "description": "Shows NVIDIA GPU utilization and memory use in the top bar (built for DGX Spark).",
+  "shell-version": ["45", "46", "47", "48"],
+  "version": 1
+}
