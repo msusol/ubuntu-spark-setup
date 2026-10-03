@@ -23,7 +23,7 @@ PS1='\[\033[32m\]${HOSTNAME^^} \W\[\033[0m\] \$ '
 #PS1='\[\033[32m\]\W\[\033[0m\] \$ '
 ```
 
-Renders as: `SPARK-DB62 <dirname> $ ` (green, hostname uppercased via
+Renders as: `MYHOST <dirname> $ ` (green, hostname uppercased via
 `${HOSTNAME^^}`). Before 2026-09-27 this was a literal hardcoded `NVIDIA `
 instead of `${HOSTNAME^^}` — changed so it reflects the real hostname
 instead of a fixed string. The commented-out lines above/below are earlier
@@ -117,7 +117,7 @@ last component + `$`/`#`, put this in `~/.zshrc`:
 
 ```zsh
 # Prompt: hostname (uppercase) + current directory (last component) + $
-# e.g. "SPARK-DB62 ollama-server $ "
+# e.g. "MYHOST myproject $ "
 PROMPT='${(U)HOST} %1~ %(!.#.$) '
 ```
 
