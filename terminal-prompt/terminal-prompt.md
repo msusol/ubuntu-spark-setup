@@ -1,10 +1,10 @@
 # Customizing the terminal prompt (bash + zsh)
 
 Login shell on this machine: `/bin/bash` (confirmed via `$SHELL` and
-`/etc/passwd`) — prompt controlled by `PS1` in `~/.bashrc`. A `~/.zshrc` was
-also added (2026-09-27) for contexts that explicitly invoke `zsh` (e.g. tools
-whose shell tool defaults to zsh); it does **not** apply to normal terminal
-logins unless the login shell is also switched (`chsh -s $(which zsh)`).
+`/etc/passwd`) — prompt controlled by `PS1` in `~/.bashrc`. There is no
+`~/.zshrc`, so `zsh` (e.g. when a tool explicitly invokes it) uses its default
+prompt. A zsh prompt only applies to normal terminal logins if the login shell
+is also switched (`chsh -s $(which zsh)`); see the optional zsh section below.
 
 ## Actual current prompt (the one that's really active)
 
@@ -110,10 +110,10 @@ sudo port install starship   # per this machine's tooling convention
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 ```
 
-## zsh prompt (`~/.zshrc`)
+## zsh prompt (optional, `~/.zshrc`)
 
-Current setup — hostname (uppercase) + current directory's last component +
-`$`/`#`:
+Not configured by default. To get hostname (uppercase) + current directory's
+last component + `$`/`#`, put this in `~/.zshrc`:
 
 ```zsh
 # Prompt: hostname (uppercase) + current directory (last component) + $
