@@ -9,6 +9,7 @@ Personal Ubuntu desktop customizations for the DGX Spark and other Ubuntu machin
 | [`spark-gpu-meter/`](spark-gpu-meter/) | GNOME Shell extension | **DGX Spark only** | GPU and unified-memory bars in the top bar. Needs `nvidia-smi` and GNOME Shell 45-48. See its [README](spark-gpu-meter/README.md). |
 | [`mx-keys-macos-layout/`](mx-keys-macos-layout/) | Shell script | Any Ubuntu (X11) | Remaps a Logitech MX Keys for Business to a Mac-style Cmd/Opt/Ctrl layout via GNOME XKB options. |
 | [`terminal-prompt/`](terminal-prompt/) | Notes | Any Ubuntu | How the bash and zsh prompts are set up on this machine. |
+| [`claude-code-terminal/`](claude-code-terminal/) | Notes | Any Ubuntu | `CLAUDE_CODE_DISABLE_MOUSE=1` so copy/paste works in PyCharm's SSH terminal, and what it costs in scrolling. See its [README](claude-code-terminal/README.md). |
 
 ## Spark-specific vs. generic
 
